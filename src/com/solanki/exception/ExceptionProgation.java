@@ -10,6 +10,9 @@ public class ExceptionProgation {
         //throw new IOException("hello");
     }
 
+    int m4() throws ArithmeticException{
+    return 50/0;
+    }
     void m1() throws Exception {
 
     }
@@ -36,6 +39,6 @@ public class ExceptionProgation {
         catch(Exception e){
             System.out.println("Exception occured for m3");
         }
-
+        exceptionProgation.m4();
     }
 }
